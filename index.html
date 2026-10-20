@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Support — Low Histamine</title>
+<style>
+  :root{--ink:#0F1419;--card:#161D24;--line:#2A353E;--bone:#E8EDF0;--mist:#8496A3;
+    --dim:#5C6B77;--amber:#D9862B;--green:#5E9E86}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--ink);color:var(--bone);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+  main{max-width:680px;margin:0 auto;padding:56px 22px 80px}
+  h1{font-size:34px;line-height:1.15;margin:0 0 8px;font-weight:600}
+  .sub{color:var(--mist);font-size:15px;margin:0 0 40px}
+  h2{font-size:21px;margin:40px 0 14px;font-weight:600}
+  p,li{color:var(--mist)} strong{color:var(--bone);font-weight:600}
+  ul{padding-left:20px} li{margin-bottom:8px}
+  details{background:var(--card);border:1px solid var(--line);border-radius:12px;
+    margin-bottom:10px;overflow:hidden}
+  summary{padding:15px 18px;cursor:pointer;color:var(--bone);font-weight:500;list-style:none;
+    display:flex;justify-content:space-between;gap:14px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";color:var(--dim);flex:none}
+  details[open] summary::after{content:"\2212"}
+  .body{padding:0 18px 16px;font-size:15px}
+  .body p{margin:0 0 10px} .body p:last-child{margin:0}
+  .notice{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--amber);
+    border-radius:0 12px 12px 0;padding:20px 22px;margin:34px 0}
+  .notice p{margin:0 0 10px} .notice p:last-child{margin:0}
+  a{color:var(--amber)}
+  footer{margin-top:52px;padding-top:22px;border-top:1px solid var(--line);
+    color:var(--dim);font-size:13px}
+</style>
+</head>
+<body>
+<main>
+  <h1>Support</h1>
+  <p class="sub">Low Histamine &middot; a tracker that shows you where the food lists disagree</p>
+
+  <h2>Common questions</h2>
+
+  <details open>
+    <summary>Why do the food lists disagree?</summary>
+    <div class="body">
+<p>Because food histamine is not a fixed property. It depends on ripeness, storage temperature, time since slaughter or harvest, bacterial load and processing. Published measurements of the same vegetable differ several-fold from one study to the next.</p>
+     <p>So different lists, testing different samples, honestly reach different conclusions. <strong>The disagreement is the actual variability of the food.</strong> This app shows you where each list stands rather than picking one and pretending it is settled.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>What are liberators and DAO blockers?</summary>
+    <div class="body">
+<p>Three separate things drive symptoms and most lists blur them. <strong>Histamine content</strong> is what is in the food. <strong>Liberators</strong> release the histamine already stored in your own mast cells &mdash; citrus and strawberries are low in histamine but commonly listed as liberators. The evidence on liberators and DAO blockers is thinner and more contested than the histamine data, and the app says so on every food that carries a flag. <strong>DAO blockers</strong> inhibit the enzyme that clears histamine, making everything else you ate worse.</p>
+     <p>Alcohol does all three, which is why it is the most reliable trigger on the diet.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Why does freshness change the number?</summary>
+    <div class="body">
+<p>Bacteria convert histidine into histamine while food sits, and <strong>cooking does not destroy histamine once formed</strong>. Reheating leftovers does not help.</p>
+     <p>Practical rules: buy fish the day you cook it or buy it frozen at sea; cook, cool briefly, then freeze rather than refrigerate; treat anything more than a day old as a different food.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>A food I eat isn't in the database</summary>
+    <div class="body">
+<p>Use <strong>Food &rarr; Custom food</strong> to add it with your own SIGHI band. It saves permanently and appears in search.</p>
+     <p>Empty searches are recorded locally under <strong>More &rarr; Your data</strong> and can be sent in one tap.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Where do the numbers come from?</summary>
+    <div class="body">
+<p>The SIGHI (Swiss Interest Group Histamine Intolerance) scale is the spine, shown next to how more lenient and stricter published diets treat the same food. Those two rows are summaries, not any single named list. Every source is linked in the app under More &rarr; Field notes.</p>
+     <p>The number on the dial is a <strong>load score derived from those bands, not a laboratory measurement</strong>. It is useful for comparing your days against each other.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>How long should the elimination phase last?</summary>
+    <div class="body">
+<p>Four to six weeks, not indefinitely. It is a diagnostic manoeuvre with a real nutritional cost.</p>
+     <p>If six weeks of genuine adherence changes nothing, the honest conclusion is that histamine is not driving your symptoms. If it does help, the goal is reintroduction &mdash; finding your actual ceiling, not staying at the strictest one.</p>
+    </div>
+  </details>
+
+  <div class="notice">
+    <p><strong>This app is a food-logging tool, not medical advice.</strong></p>
+    <p>Histamine intolerance is <strong>real but poorly defined</strong>. There is no validated diagnostic test, DAO blood levels correlate weakly with symptoms, and the published food lists openly contradict each other. The number shown in this app is a load score derived from those lists, not a laboratory measurement.</p>
+    <p>Histamine symptoms overlap with <strong>mast cell activation syndrome, IgE allergy and several other conditions</strong> that need proper diagnosis. Get assessed before you restrict.</p>
+    <p>A strict elimination is meant to last four to six weeks, not indefinitely, and this is the most restrictive of the common elimination diets. Watch vitamin C, fibre and simple energy intake.</p>
+    <p><strong>Sudden severe symptoms, especially breathing difficulty or throat swelling, are an emergency</strong> &mdash; not a food-diary problem. This app does not diagnose, treat, cure or prevent any disease.</p>
+  </div>
+
+  <h2>Contact</h2>
+  <p>Bugs, missing foods, or anything else:
+  <a href="mailto:muratorekevin+lowhistamine@gmail.com">muratorekevin+lowhistamine@gmail.com</a></p>
+  <p>Missing foods are the most useful thing you can send. Include the food and
+  a link to the label or database entry and it goes into the next update.</p>
+
+  <footer>
+    <a href="privacy.html">Privacy policy</a> &middot; Low Histamine
+  </footer>
+</main>
+</body>
+</html>
